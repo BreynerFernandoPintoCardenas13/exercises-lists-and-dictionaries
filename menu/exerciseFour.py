@@ -1,4 +1,6 @@
-from logic.exerciseFour import lottery, format_date
+from logic.exerciseFourList import lottery
+from logic.exerciseFour import format_date
+
 
 def designFourList():
     number = int(input("What is the number? example: 1 ..100 "))
