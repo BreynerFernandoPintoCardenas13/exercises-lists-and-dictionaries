@@ -1,5 +1,5 @@
 import json
-import tabulate
+from tabulate import tabulate
 def read_file(path):
     with open(f"exercises-lists-and-dictionaries/databases/{path}", "r") as file:
         datos = file.read()
@@ -24,8 +24,7 @@ def exerciseTWoDict(data, name, age, direction, telefono):
         "Direccion": direction,
         "Telefono": telefono
     }
-    headers=data[0].keys()
     data.append(formato)
-    data=(tabulate(headers=headers, tablefmt="grid"))
+    print(tabulate(data, headers="keys", tablefmt="grid"))
     write_file(data, "exerciseTwoDict.json")
     return data        

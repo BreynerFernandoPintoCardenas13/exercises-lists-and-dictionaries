@@ -1,13 +1,13 @@
 import json
-import tabulate
-def read_file():
-    with open("exercises-lists-and-dictionaries/databases/exerciseTwoList.json", "r") as file:
+from tabulate import tabulate
+def read_file(path):
+    with open(f"exercises-lists-and-dictionaries/databases/{path}", "r") as file:
         datos = file.read()
         convertirList=json.loads(datos)
         return convertirList
 
-def write_file(datos):
-    with open("exercises-lists-and-dictionaries/databases/exerciseTwoList.json", "wb+") as file:
+def write_file(datos, path):
+    with open(f"exercises-lists-and-dictionaries/databases/{path}", "wb+") as file:
         convertirJson=json.dumps(datos, indent=4).encode("utf-8")
         file.write(convertirJson)
         file.close()
@@ -16,7 +16,9 @@ def display_data_in_table(data):
     print(tabulate(data, headers=headers, tablefmt="grid"))
         
 def exerciseTWoList(course):    
-    data=read_file()
+    data=read_file("exerciseTwoList.json")
     data.append(course)
-    write_file(data)
+    write_file(data, "exerciseTwoList.json")
+    return data        
+
     return data        
