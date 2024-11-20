@@ -7,6 +7,11 @@ def designFourList():
 
 
 def designFourDict():
-    date = input("What is the date? ")
+    date = input("What is the date? (05/05/2000)")
     print(format_date(date))
-    return 0
+    desicion=int(input("You want continue? Y/1 N/0"))
+    if desicion==1:
+        return
+    elif desicion==0:
+        from menu.mainMenu import menuPrincipal
+        menuPrincipal()

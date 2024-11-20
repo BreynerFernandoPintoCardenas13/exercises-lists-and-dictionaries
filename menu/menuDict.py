@@ -1,5 +1,5 @@
 import match
-def menuListas():
+def menuDict():
     while True:    
         print(f"""
             EJERCICIOS
@@ -16,9 +16,7 @@ def menuListas():
                 break
             
             case 4:
-                from menu.exerciseFour import designFourList
-                return designFourList()
+                from menu.exerciseFour import designFourDict
+                return designFourDict()
                 break
         return 0
-
-        

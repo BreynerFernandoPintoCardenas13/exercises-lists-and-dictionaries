@@ -1,12 +1,12 @@
 import json
 def read_file(path):
-    with open(f"exercises-lists-and-dictionaries/databases/{path}", "r") as file:
+    with open(f"exercises-lists-and-dictionaries/databases/exerciseFourDict.json", "r") as file:
         data = file.read()
         convertList = json.loads(data)
         return convertList
     
 def write_file(data, path):
-    with open(f"exercises-lists-and-dictionaries/databases/{path}", "wb+") as file:
+    with open(f"exercises-lists-and-dictionaries/databases/exerciseFourDict.json", "wb+") as file:
         convertJson = json.dumps(data, indent=4).encode("utf-8")
         file.write(convertJson)
         file.close()
