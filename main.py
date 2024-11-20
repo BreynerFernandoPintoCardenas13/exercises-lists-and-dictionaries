@@ -3,5 +3,5 @@ while True:
 
     rta=menuPrincipal()
     if rta==1:
-        from menu.exerciseOne import design
-        design()
+        from menu.menuListas import menuListas
+        rta=menuListas()
