@@ -3,17 +3,22 @@ from logic.exerciseFour import format_date
 
 
 def designFourList():
-    number = int(input("What is the number? example: 1 ..100 "))
-    print(lottery(number))
-    return 0
+    while True: 
+        number = int(input("What is the number? example: 1 ..100 "))
+        print(lottery(number))
+        desicion=int(input("You want continue? Y/1 N/0"))
+        if desicion==0:
+            from main import mainMenu
+            mainMenu()
+            break
 
 
 def designFourDict():
-    date = input("What is the date? (05/05/2000)")
-    print(format_date(date))
-    desicion=int(input("You want continue? Y/1 N/0"))
-    if desicion==1:
-        return
-    elif desicion==0:
-        from menu.mainMenu import menuPrincipal
-        menuPrincipal()
+    while True:
+        date = input("What is the date? (05/05/2000)")
+        print(format_date(date))
+        desicion=int(input("You want continue? Y/1 N/0"))
+        if desicion==0:
+            from main import mainMenu
+            mainMenu()
+            break

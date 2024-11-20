@@ -12,13 +12,11 @@ def menuListas():
             case 1:
                 from menu.exerciseOne import design
                 design()
-                return design()
-                break
             
             case 4:
                 from menu.exerciseFour import designFourList
-                return designFourList()
-                break
-        return 0
+                designFourList()
+                
+
 
         
