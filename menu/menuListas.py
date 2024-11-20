@@ -5,6 +5,7 @@ def menuListas():
             EJERCICIOS
         --------------------------
         1. EJERCICIO 1
+        2. EJERCICIO 2
         4. EJERCICIOS 4   
     """)
         desicion=int(input("Ingresa una opcion"))
@@ -12,7 +13,9 @@ def menuListas():
             case 1:
                 from menu.exerciseOne import design
                 design()
-            
+            case 2:
+                from menu.exerciseTwo import designTwoList
+                designTwoList()
             case 4:
                 from menu.exerciseFour import designFourList
                 designFourList()
