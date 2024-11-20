@@ -26,12 +26,12 @@ def get_notes():
     for subject in subjects:
         while True:
             try:
-                note = float(input(f"¿Qué nota has sacado en {subject}? (0 a 100): "))
-                if 0 <= note <= 100:
+                note = float(input(f"¿Qué nota has sacado en {subject}? "))
+                if 0 <= note <= 10:
                     notes[subject] = note
                     break
                 else:
-                    print("Nota inválida, por favor ingresa una nota entre 0 y 100.")
+                    print("Nota inválida, por favor ingresa una nota entre 0 y 10.")
             except ValueError:
                 print("Entrada no válida. Por favor ingresa un número.")
 
