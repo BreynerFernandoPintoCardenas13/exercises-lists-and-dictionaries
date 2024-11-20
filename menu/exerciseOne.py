@@ -7,5 +7,8 @@ def design():
         
         print(rta)  
         desicion=int(input("You want continue? Y/1 N/0"))
-        if desicion==0:
+        if desicion==1:
+            return
+        elif desicion==0:
             break
+        

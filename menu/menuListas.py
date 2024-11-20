@@ -16,5 +16,6 @@ def menuListas():
         case 4:
             from menu.exerciseFour import designFourList
             return designFourList()
+    return 0
 
-    return desicion
+    
