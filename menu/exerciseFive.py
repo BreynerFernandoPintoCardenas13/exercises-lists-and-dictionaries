@@ -9,14 +9,20 @@ def designFiveListMenu():
         if decision == 0:
             print("¡Hasta luego!")
             break
-from logic.exerciseFiveDict import show_subject_credits
+from logic.exerciseFiveDict import show_subject_credits, input_subject_credits
 
 def designFiveDictMenu():
     while True:
         print("Bienvenido al programa de créditos de asignaturas.")
+        
+        # Mostrar créditos y permitir al usuario ingresarlos
         show_subject_credits()
         
-        decision = int(input("¿Quieres continuar? Y/1 N/0: "))
-        if decision == 0:
+        # Opción para ingresar los créditos manualmente
+        decision = int(input("¿Quieres ingresar los créditos de una asignatura? Y/1 N/0: "))
+        if decision == 1:
+            input_subject_credits()
+        elif decision == 0:
             print("¡Hasta luego!")
             break
+

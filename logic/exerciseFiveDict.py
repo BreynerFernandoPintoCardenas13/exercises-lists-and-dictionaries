@@ -1,12 +1,5 @@
 import json
 
-# Diccionario con los créditos de las asignaturas
-subject_credits = {
-    "Matemáticas": 6,
-    "Física": 4,
-    "Química": 5
-}
-
 # Función para leer el archivo JSON
 def read_file(path):
     try:
@@ -23,8 +16,7 @@ def write_file(data, path):
 
 # Función que muestra los créditos de cada asignatura y el total de créditos
 def show_subject_credits():
-    # Guardar el diccionario de asignaturas y créditos en el archivo JSON
-    write_file(subject_credits, "exerciseFiveDict.json")
+    subject_credits = read_file("exerciseFiveDict.json")
     
     # Mostrar los créditos de cada asignatura
     total_credits = 0
@@ -35,3 +27,33 @@ def show_subject_credits():
 
     # Mostrar el total de créditos
     print(f"\nEl número total de créditos del curso es: {total_credits}")
+
+# Función para ingresar los créditos de una asignatura
+def input_subject_credits():
+    subject_credits = read_file("exerciseFiveDict.json")
+    
+    while True:
+        subject = input("Introduce el nombre de la asignatura (o 'salir' para terminar): ").strip()
+        
+        if subject.lower() == 'salir':
+            break
+        
+        if not subject:
+            print("El nombre de la asignatura no puede estar vacío. Intenta nuevamente.")
+            continue
+        
+        try:
+            credits = int(input(f"Introduce los créditos para {subject}: "))
+            if credits < 0:
+                print("Los créditos no pueden ser negativos. Intenta nuevamente.")
+                continue
+        except ValueError:
+            print("Por favor, ingresa un número válido para los créditos.")
+            continue
+        
+        # Añadir o actualizar la asignatura con los créditos ingresados
+        subject_credits[subject] = credits
+        print(f"Créditos de {subject} actualizados a {credits}.")
+    
+    # Guardar los créditos en el archivo JSON después de ingresar los datos
+    write_file(subject_credits, "exerciseFiveDict.json")

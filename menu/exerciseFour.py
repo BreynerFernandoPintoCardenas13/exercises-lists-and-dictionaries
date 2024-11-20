@@ -1,5 +1,5 @@
-from logic.exerciseFourList import lottery
-from logic.exerciseFour import format_date
+
+from logic.exerciseFour import lottery, format_date
 
 
 def designFourList():
