@@ -10,5 +10,23 @@
         "Edad": 1,
         "Direccion": "2",
         "Telefono": 1
+    },
+    {
+        "Nombre": "Breyner Pinto",
+        "Edad": 19,
+        "Direccion": "cl 14\u00b710-70",
+        "Telefono": 3182792275
+    },
+    {
+        "Nombre": "Breyner",
+        "Edad": 19,
+        "Direccion": "12",
+        "Telefono": 2
+    },
+    {
+        "Nombre": "Breyner",
+        "Edad": 12,
+        "Direccion": "2",
+        "Telefono": 2
     }
 ]

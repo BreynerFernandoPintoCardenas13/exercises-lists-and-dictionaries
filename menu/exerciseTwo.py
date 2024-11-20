@@ -21,7 +21,7 @@ def designTwoDic():
         age=int(input("what is your age?:"))
         direction=input("What is your direction?: ")
         telefono=int(input("Which is your phone number?: "))
-        print(exerciseTWoDict(data,name, age, direction, telefono))
+        exerciseTWoDict(data,name, age, direction, telefono)
         
         desicion=int(input("you want continue? Y/1 N/0"))       
         if desicion==0:

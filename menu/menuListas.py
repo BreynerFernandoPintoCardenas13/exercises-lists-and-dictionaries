@@ -8,7 +8,7 @@ def menuListas():
         2. EJERCICIO 2
         4. EJERCICIOS 4   
     """)
-        desicion=int(input("Ingresa una opcion"))
+        desicion=int(input("Ingresa una opcion: "))
         match desicion:
             case 1:
                 from menu.exerciseOne import design

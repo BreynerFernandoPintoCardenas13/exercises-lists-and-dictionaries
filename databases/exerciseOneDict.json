@@ -1,12 +1,12 @@
 
 {
-    "Dolar":"$",
-    "Euro": "€",
-    "Libra esterlina": "£",
-    "Franco suizo": "Fr",
-    "Corona sueca": "kr",
+    "dolar":"$",
+    "euro": "€",
+    "libra": "£",
+    "franco suizo": "Fr",
+    "corona sueca": "kr",
     "Corona noruega": "kr",
-    "Forinto": "Ft",
+    "forinto": "Ft",
     "Yen": "¥",
-    "Dólar de Hong Kong": "HK$"
+    "dólar de Hong Kong": "HK$"
 }
