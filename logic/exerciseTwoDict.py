@@ -16,13 +16,16 @@ def display_data_in_table(data):
     print(tabulate(data, headers=headers, tablefmt="grid"))
         
 def exerciseTWoDict(data, name, age, direction, telefono):    
-    data=read_file("exerciseTWoDict.json")
+    data=read_file("exerciseTwoDict.json")
+    
     formato={
         "Nombre": name,
         "Edad": age,
         "Direccion": direction,
         "Telefono": telefono
     }
+    headers=data[0].keys()
     data.append(formato)
-    write_file(data, "exerciseTWoDict.json")
+    data=(tabulate(headers=headers, tablefmt="grid"))
+    write_file(data, "exerciseTwoDict.json")
     return data        

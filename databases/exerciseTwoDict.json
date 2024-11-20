@@ -1,9 +1,8 @@
 [
     {
-        "Nombre": "",
-        "Edad": "",
-        "Direccion": "",
-        "Telefono": ""
-        
+        "Nombre": "Breyner",
+        "Edad": 12,
+        "Direccion": "cl 14#10-70",
+        "Telefono": 30012123
     }
 ]

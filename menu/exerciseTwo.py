@@ -15,11 +15,12 @@ def designTwoList():
 def designTwoDic():
     while True:
         i=+1
+        data=[]
         name=input(f"What is your name?: ")
         age=int(input("what is your age?:"))
         direction=input("What is your direction?: ")
         telefono=int(input("Which is your phone number?: "))
-        print(exerciseTWoDict(name, age, direction, telefono))
+        print(exerciseTWoDict(data,name, age, direction, telefono))
         
         desicion=int(input("you want continue? Y/1 N/0"))       
         if desicion==0:
