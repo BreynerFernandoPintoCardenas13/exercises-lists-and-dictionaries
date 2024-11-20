@@ -9,4 +9,8 @@ def mainMenu():
         elif rta==2:
             from menu.menuDict import menuDict
             menuDict()
+        elif rta==3:
+            from menu.bye import bye
+            bye()
+            break
 mainMenu()

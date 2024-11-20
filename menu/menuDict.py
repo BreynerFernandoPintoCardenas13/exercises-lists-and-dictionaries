@@ -5,6 +5,7 @@ def menuDict():
             EJERCICIOS
         --------------------------
         1. EJERCICIO 1
+        2. EJERCICIO 2
         4. EJERCICIOS 4   
     """)
         desicion=int(input("Ingresa una opcion"))
@@ -13,7 +14,10 @@ def menuDict():
                 from menu.exerciseOne import divisa
                 divisa()
                 break
-            
+            case 2:
+                from menu.exerciseTwo import designTwoDic
+                designTwoDic()
+                break
             case 4:
                 from menu.exerciseFour import designFourDict
                 designFourDict()
