@@ -4,7 +4,7 @@ while True:
     rta=menuPrincipal()
     if rta==1:
         from menu.menuListas import menuListas
-        rta=menuListas()
+        menuListas()
     elif rta==2:
         from menu.menuDict import menuDict
-        rta=menuDict()
+        menuDict()

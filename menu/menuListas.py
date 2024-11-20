@@ -10,9 +10,9 @@ def menuListas():
         desicion=int(input("Ingresa una opcion"))
         match desicion:
             case 1:
-                from menu.exerciseOne import divisa
-                divisa()
-                return divisa()
+                from menu.exerciseOne import design
+                design()
+                return design()
                 break
             
             case 4:
