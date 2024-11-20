@@ -1,4 +1,4 @@
-from logic.exercisesOne import saveCourse
+from logic.exerciseOneListas import saveCourse
 
 def design():
     course=input("What is the course name? ")
