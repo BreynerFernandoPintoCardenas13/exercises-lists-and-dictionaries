@@ -10,10 +10,11 @@ def write_file(datos, path):
         convertirJson=json.dumps(datos, indent=4).encode("utf-8")
         file.write(convertirJson)
         file.close()
-        
-def saveCourse(course):    
-    data=read_file("exercisesOneListas.json")
-    data.append(course)
-    write_file(data, "exercisesOneListas.json")
-    return data        
+               
 
+def search_currency(currency):
+    data = read_file("exerciseOneDict.json")
+    if (data.get(currency)):
+        return data.get(currency)
+    else:
+        return "Currency not found"

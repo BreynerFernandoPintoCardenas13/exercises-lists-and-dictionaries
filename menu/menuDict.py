@@ -10,9 +10,8 @@ def menuDict():
         desicion=int(input("Ingresa una opcion"))
         match desicion:
             case 1:
-                from menu.exerciseOne import design
-                design()
-                return design()
+                from menu.exerciseOne import divisa
+                return divisa()
                 break
             
             case 4:
