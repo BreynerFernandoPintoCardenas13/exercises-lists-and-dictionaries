@@ -10,6 +10,7 @@ def menuDict():
         4. EJERCICIO 4
         5. EJERCICIO 5  
         6. EJERCICIO 6
+        7. EJERCICIO 7
     """)
         desicion=int(input("Ingresa una opcion: "))
         match desicion:
@@ -34,4 +35,7 @@ def menuDict():
             case 6:
                 from menu.exerciseSix import designSixMenuDict
                 designSixMenuDict()
+            case 7:
+                from menu.exerciseSeven import designSevenDictMenu
+                designSevenDictMenu()
         return 0

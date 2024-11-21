@@ -10,6 +10,7 @@ def menuListas():
         4. EJERCICIO 4   
         5. EJERCICIO 5
         6. EJERCICIO 6
+        7. EJERCICIO 7
     """)
         desicion=int(input("Ingresa una opcion: "))
         match desicion:
@@ -31,6 +32,9 @@ def menuListas():
             case 6:
                 from menu.exerciseSix import designSixMenu
                 designSixMenu()
+            case 7:
+                from menu.exerciseSeven import designSevenMenu
+                designSevenMenu()
                 
 
 
